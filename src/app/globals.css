@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  --purple-deep:    #0f0520;
+  --purple-dark:    #1e0845;
+  --purple-mid:     #5b21b6;
+  --purple-bright:  #8b5cf6;
+  --purple-glow:    #a78bfa;
+  --purple-light:   #ede9fe;
+  --accent-pink:    #e879f9;
+  --accent-cyan:    #67e8f9;
+  --text-primary:   #f5f0ff;
+  --text-secondary: #c4b5fd;
+  --text-muted:     #7c6b9e;
+  --surface:        rgba(45, 10, 94, 0.35);
+  --border:         rgba(139, 92, 246, 0.22);
+}
+
+* { box-sizing: border-box; text-decoration: none;  }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--purple-deep);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--purple-deep); }
+::-webkit-scrollbar-thumb { background: var(--purple-mid); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--purple-bright); }
+
+.font-display { font-family: 'Syne', sans-serif; }
+
+.text-glow { text-shadow: 0 0 60px rgba(167,139,250,0.5); }
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--purple-glow), var(--accent-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+@keyframes float { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-28px) scale(1.04)} }
+@keyframes float-reverse { 0%,100%{transform:translateY(0)} 50%{transform:translateY(28px)} }
+@keyframes pulse-slow { 0%,100%{opacity:0.35} 50%{opacity:0.7} }
+@keyframes fade-up { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+.animate-float { animation: float 8s ease-in-out infinite; }
+.animate-float-reverse { animation: float-reverse 10s ease-in-out infinite; }
+.animate-pulse-slow { animation: pulse-slow 5s ease-in-out infinite; }
+.animate-fade-up { animation: fade-up 0.8s ease forwards; }
+.animate-blink { animation: blink 1s step-end infinite; }
+
+.delay-100{animation-delay:0.1s;opacity:0}
+.delay-200{animation-delay:0.2s;opacity:0}
+.delay-300{animation-delay:0.3s;opacity:0}
+.delay-400{animation-delay:0.4s;opacity:0}
+.delay-500{animation-delay:0.5s;opacity:0}
+.delay-600{animation-delay:0.6s;opacity:0}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--purple-mid), var(--accent-pink));
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Syne', sans-serif;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(139,92,246,0.45); }
+
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: 'Syne', sans-serif;
+}
+.btn-outline:hover {
+  border-color: var(--purple-bright);
+  color: var(--purple-glow);
+  background: rgba(139,92,246,0.1);
+  transform: translateY(-2px);
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(139,92,246,0.12);
+  border: 1px solid rgba(139,92,246,0.28);
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--purple-glow);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+}
+
+.tag {
+  background: rgba(139,92,246,0.1);
+  border: 1px solid rgba(139,92,246,0.18);
+  color: var(--text-secondary);
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.tag:hover {
+  background: rgba(139,92,246,0.22);
+  border-color: var(--purple-bright);
+  color: var(--purple-glow);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+}
