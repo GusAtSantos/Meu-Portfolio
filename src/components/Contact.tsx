@@ -107,7 +107,7 @@ export default function Contact() {
               disabled={status === "sending" || status === "sent"}
               className="btn-primary w-full flex items-center justify-center gap-2 disabled:opacity-60"
             >
-              {status === "idle" && (<><Send size={16} /> Enviar mensagem</>)}
+              {status === "idle" && (<><Send size={16} />Favor enviar por fora do forms, estou consertando um bug ⚒️</>)}
               {status === "sending" && "Enviando..."}
               {status === "sent" && "✓ Mensagem enviada!"}
             </button>
