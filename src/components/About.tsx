@@ -59,7 +59,7 @@ export default function About() {
                             </p>
                         </div>
 
-                        <div className="mt-8 flex flex-wrap gap-5">
+                        <div className="mt-8 flex flex-wrap gap-2.5">
                             {["Next.js", "TypeScript", "React", "Node.js", "Tailwind","JavaScript","PHP","C#","SQLite","Kotlin","Swift"].map((tag) => (
                                 <span key={tag} className="tag">{tag}</span>
                             ))}
