@@ -45,7 +45,7 @@ export default function About() {
                                 Sou um desenvolvedor apaixonado por criar interfaces que combinam
                                 estética e funcionalidade. Com <strong style={{ color: "var(--text-secondary)" }}>poucos anos de experiência</strong>, quero me
                                 ingressar no mercado de tecnologia onde eu possa aplicar e desenvolver os conhecimentos
-                                adquiridos no<strong style={{color: "var(--purple-glow)"}}>Colégio Cotemig</strong>,  — uma das escolas técnicas mais prestigiadas — e futuramente na <strong style={{color: "var(--purple-glow)" }}>Dom Helder </strong> uma das faculdades mais prestigiadas - contribuindo com soluções inovadoras e eficientes.
+                                adquiridos no<strong style={{color: "var(--purple-glow)"}}>Colégio Cotemig</strong>,  — uma das escolas técnicas mais prestigiadas — e na <strong style={{color: "var(--purple-glow)" }}>Dom Helder </strong> uma das faculdades mais prestigiadas - contribuindo com soluções inovadoras e eficientes.
 
                             </p>
                             <p>
